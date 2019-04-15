@@ -82,7 +82,7 @@ WebDriverWait wait;
 		
 		jse.executeScript("arguments[0].click();", driver.findElement(click));
 	wait.until(ExpectedConditions.visibilityOfElementLocated(waitForNextPage));
-	driver.findElement(waitForNextPage).getText().equalsIgnoreCase("Showing 41 – 80 products of 80,316 products)");
+	driver.findElement(waitForNextPage).getText().equalsIgnoreCase("Showing 41 â€“ 80 products of 80,316 products)");
 
 	
 	}
@@ -105,6 +105,7 @@ WebDriverWait wait;
 	public void addCart() {
 		jse.executeScript("arguments[0].click();", driver.findElement(sizeLink));
 		jse.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(waitForElementPage));
+		jse.executeScript("arguments[0].click();", driver.findElement(waitForElementPage));
 		jse.executeScript("arguments[0].click();", driver.findElement(waitForElementPage));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(afterCartAdd));
 	}
