@@ -17,7 +17,7 @@ And Add it to cart
 
 Examples:
 |username  |password |
-|9001068482|sidhon123|
+|EnterYourMobileNumberHere|PasswordHere|
 
 
 
